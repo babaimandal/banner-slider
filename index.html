@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Banner SLider</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+
+
+
+
+
+
+<div class="banner-wrapper">
+  <div class="banner-slider">
+    
+    <div>
+      <div class="banner-main-block-wrapper">
+          <div class="banner" style="background: blue;">
+            <img src="https://picsum.photos/id/64/1920/864" alt="">
+          </div>
+      </div>
+    </div>
+    
+    <div>
+      <div class="banner" style="background: yellow;">
+        <img src="https://picsum.photos/id/988/1920/864" alt="">
+      </div>
+    </div>
+    
+    <div>
+      <div class="banner" style="background: red;">
+        <img src="https://picsum.photos/id/999/1920/864" alt="">
+      </div>
+    </div>	
+    
+    <div>
+      <div class="banner" style="background: green;">
+        <img src="https://picsum.photos/id/111/1920/864" alt="">
+      </div>
+    </div>
+    
+    <div>
+      <div class="banner" style="background: pink;">
+        <img src="https://picsum.photos/id/777/1920/864" alt="">
+      </div>
+    </div>
+  </div>
+
+	<div class="banner-text">
+	   <div class="banner-content">
+	         <h1>Heading</h1>
+	         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	         Laborum mollitia nam impedit doloribus, aperiam velit repreh
+	         enderit cumque omnis rem id quo amet, repudiandae aut corru
+	         pti ut tenetur porro. Vero velit qui est soluta unde repella
+	         t, impedit reprehenderit similique commodi porro mollitia, 
+	         culpa ut beatae eaque, cumque ab provident praesentium. Offic
+	         iis.</p>
+	   </div>    
+	</div>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.banner-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  </script>
+</body>
+</html>
